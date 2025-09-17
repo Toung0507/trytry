@@ -1,11 +1,13 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-
-
-// import HomeView from '../views/HomeView.vue'
-// import AboutView from '../views/AboutView.vue'
-// import ReviewView from '../views/ReviewView.vue'
-// import TodoView from '../views/TodoView.vue'
-
+import AboutView from '../views/AboutView.vue';
+import TodoView from '../views/TodoView.vue';
+import SeconView from '../views/SeconView.vue';
+import RegisterView from '../views/RegisterView.vue';
+import SpView from '../views/SpView.vue';
+import FifthView from '../views/FifthView.vue';
+import WeekThree from '../views/WeekThree.vue';
+import TodoList from '@/components/NewToDo/todoList.vue';
+import LoginView from '../views/LoginView.vue';
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -13,64 +15,58 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      // component: () => import('../views/HomeView.vue'),
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue'),
+      component: AboutView,
     },
     {
       path: '/TodoView',
       name: 'TodoView',
-      component: () => import('../views/TodoView.vue'),
+      component: TodoView,
     },
     {
       path: '/SeconView',
       name: 'SeconView',
-      component: () => import('../views/SeconView.vue'),
+      component: SeconView,
     },
     {
       path: '/ReviewView',
       name: 'ReviewView',
-      component: () => import('../views/ReviewView.vue'),
+      component: RegisterView,
     },
     {
       path: '/SpView',
       name: 'SpView',
-      component: () => import('../views/SpView.vue'),
+      component: SpView,
     },
     {
       path: '/Register',
       name: 'Register',
-      component: () => import('../views/RegisterView.vue'),
+      component: RegisterView,
     },
     {
       path: '/FifthView',
       name: 'FifthView',
-      component: () => import('../views/FifthView.vue'),
+      component: FifthView,
     },
     {
       path: '/WeekThree',
       name: 'WeekThree',
-      component: () => import('../views/WeekThree.vue'),
+      component: WeekThree,
     },
     {
       path: '/ToDoListView',
       name: 'ToDoListView',
-      component: () => import('../views/ToDoListView.vue'),
+      component: TodoList,
     },
     {
       path: '/Login',
       name: 'Login',
-      component: () => import('../views/LoginView.vue'),
+      component: LoginView,
     },
     // 未定義路由跳轉
     { path: '/:pathMatch(.*)*', redirect: '/' },
 
   ],
 })
-
 
 // router.beforeEach((to, from, next) => {
 //   const userStore = useUserStore()
