@@ -6,7 +6,7 @@ import RegisterView from '../views/RegisterView.vue';
 import SpView from '../views/SpView.vue';
 import FifthView from '../views/FifthView.vue';
 import WeekThree from '../views/WeekThree.vue';
-import TodoList from '@/components/NewToDo/todoList.vue';
+import ToDoListView from '@/views/ToDoListView.vue';
 import LoginView from '../views/LoginView.vue';
 
 const router = createRouter({
@@ -55,7 +55,7 @@ const router = createRouter({
     {
       path: '/ToDoListView',
       name: 'ToDoListView',
-      component: TodoList,
+      component: ToDoListView,
     },
     {
       path: '/Login',
